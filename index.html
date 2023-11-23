@@ -2,14 +2,23 @@
 <html>
 <head>
 <title>229 Monsters</title>
+<meta http-equiv="refresh" content="5" />
 <style>
+	@import url('https://fonts.googleapis.com/css2?family=Anton&family=Mulish:wght@400&display=swap');
 	body {
+		background-image: url('styles/bg.png');
 		background-color: #1b1712;
 	}
-	div.container {
+	h1 {
+		font-family: 'Anton', sans-serif;
+		color: #f9f4ef;
+		text-align: center;
+		margin: 50px auto;
+	}
+		div.container {
 		box-sizing: border-box;
 		width: 96%;
-		margin: 0 auto 20px;
+		margin: 50px auto 100px;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
@@ -18,6 +27,8 @@
 	div.thumb {
 		align-items: flex-end;
   	box-sizing: border-box;
+		border: 3px solid #14110D;
+		background-color: #19150f;
   	cursor: pointer;
   	display: flex;
   	flex-direction: column;
@@ -29,6 +40,7 @@
 	}
 	.thumb img {
 		display: block;
+		background-color: #1b1712;
 		height: auto;
 		object-fit: contain;
 		width: 100%;
@@ -36,7 +48,7 @@
 	.thumb p {
 		align-items: center;
 	  box-sizing: border-box;
-	  color: #fff;
+	  color: #f9f4ef;
 	  display: flex;
 	  flex-wrap: wrap;
 	  font-size: min(.9rem,18px);
@@ -51,10 +63,13 @@
 	}
 	.thumb p span {
   	display: inline-block;
+		font-family: 'Mulish', sans-serif;
 	}
 </style>
 </head>
 <body>
+
+<h1>The Monsters of Monster Hunter</h1>
 
 <div class="container">
 	<div class="thumb">
@@ -972,7 +987,7 @@
 	<div class="thumb">
 		<img src="thumbs/thumb-229.png" alt="Flaming Espinas" width="400" height="400">
 		<p><span>Flaming Espinas</span></p>
-	</div>	
+	</div>
 </div>
 
 </body>
