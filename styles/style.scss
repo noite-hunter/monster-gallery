@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Mulish:wght@400&display=swap');
+
+body {
+	background-image: url('bg.png');
+	background-color: #1b1712;
+}
+
+h1 {
+	font-family: 'Anton', sans-serif;
+	color: #f9f4ef;
+	text-align: center;
+	margin: 50px auto;
+}
+
+	div.container {
+	box-sizing: border-box;
+	width: 96%;
+	margin: 50px auto 100px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: flex-start;
+}
+
+div.thumb {
+	align-items: flex-end;
+ 		box-sizing: border-box;
+	border: 3px solid #14110D;
+	background-color: #19150f;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin: min(.75rem,15px);
+	position: relative;
+	transition: filter .3s ease-in-out;
+	width: min(10rem,200px);
+}
+
+.thumb img {
+	display: block;
+	background-color: #1b1712;
+	height: auto;
+	object-fit: contain;
+	width: 100%;
+}
+
+.thumb p {
+	align-items: center;
+	box-sizing: border-box;
+	color: #f9f4ef;
+	display: flex;
+	flex-wrap: wrap;
+	font-size: min(.9rem,18px);
+	height: 3em;
+	justify-content: center;
+	line-height: 1.5;
+	padding: 0 min(.5rem,10px);
+	pointer-events: none;
+	position: relative;
+	text-align: center;
+	width: 100%;
+}
+
+.thumb p span {
+ 	display: inline-block;
+	font-family: 'Mulish', sans-serif;
+}

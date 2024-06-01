@@ -11,10 +11,13 @@ for(let row = 0; row <= lastFilledRow; row++){                  //Nested 'for' l
     for(let col = 0; col < monsterNames[0].length; col++){      
         if(monsterNames[row][col] === null){ continue };
         generatedGallery +=                                     //HTML code for the thumbnails
-        `<div class="thumb">
-            <img src="thumbs/thumb-${format(row + 1, 3)}_${format(col, 2)}.png" alt="${monsterNames[row][col]}"/>
-            <p><span>${monsterNames[row][col]}</span></p>
-        </div>`
+            `<div class="card">
+                <div class="thumb-bg">
+                    <div class="thumb-image" style="background-image:url('thumbs/thumb-${format(row + 1, 3)}_${format(col, 2)}.png');"></div>
+                    <div class="thumb-shadow" style="background-image:url('thumbs/thumb-${format(row + 1, 3)}_${format(col, 2)}.png');"></div>
+                </div>
+                <p>${monsterNames[row][col]}</p>
+            </div>`
         ;
     };
 };
