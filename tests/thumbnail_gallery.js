@@ -1,4 +1,4 @@
-const response = await fetch("/monster_names.json");             //Imports the Json data containing the monster names from the external .json file
+const response = await fetch("../monster_names.json");             //Imports the Json data containing the monster names from the external .json file
 const monsterNames = await response.json();                     //Interprets the Json data and creates an 'array' containing it
 
 const isNotNull = (element) => element[0] != null;              //'function' that checks if the first element of each row is not null
@@ -12,7 +12,7 @@ for(let row = 0; row <= lastFilledRow; row++){                  //Nested 'for' l
         if(monsterNames[row][col] === null){ continue };
         generatedGallery +=                                     //HTML code for the thumbnails
         `<div class="thumb">
-            <img src="/thumbs/thumb-${format(row + 1, 3)}_${format(col, 2)}.png" alt="${monsterNames[row][col]}"/>
+            <img src="../thumbs/thumb-${format(row + 1, 3)}_${format(col, 2)}.png" alt="${monsterNames[row][col]}"/>
             <p><span>${monsterNames[row][col]}</span></p>
         </div>`
         ;
